@@ -31,16 +31,22 @@ class Search extends StatelessWidget {
                   Radius.circular(30),
                 ),
               ),
-              prefixIcon: SvgPicture.asset(
-                'assets/images/search-icon.svg',
-                height: 1,
-                width: 1,
-                color: searchColor,
+              prefixIcon: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: SvgPicture.asset(
+                  'assets/images/search-icon.svg',
+                  height: 1,
+                  width: 1,
+                  color: searchColor,
+                ),
               ),
-              suffixIcon: SvgPicture.asset(
-                'assets/images/mic-icon.svg',
-                width: 1,
-                height: 1,
+              suffixIcon: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: SvgPicture.asset(
+                  'assets/images/mic-icon.svg',
+                  width: 1,
+                  height: 1,
+                ),
               ),
             ),
           ),
